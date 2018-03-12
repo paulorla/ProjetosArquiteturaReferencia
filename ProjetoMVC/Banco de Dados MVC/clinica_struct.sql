@@ -14,7 +14,6 @@ CREATE TABLE ANIMAL
     ID             BIGINT IDENTITY NOT NULL ,
     NOME           VARCHAR (50) NOT NULL ,
     NASCIMENTO     DATE ,
-    DONO_ID        BIGINT NOT NULL ,
     ESPECIE_ID BIGINT NOT NULL ,
     constraint ANIMAL_PK primary key (ID)
   ) ;
