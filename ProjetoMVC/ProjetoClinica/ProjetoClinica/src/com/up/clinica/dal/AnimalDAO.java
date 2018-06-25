@@ -1,13 +1,11 @@
-package com.up.clinica.model.dao;
+package com.up.clinica.dal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.up.clinica.model.Animal;
-import com.up.clinica.model.ConnectionFactory;
 import com.up.clinica.model.Especie;
 
 public class AnimalDAO extends AbstractDAO<Animal, Long> {
