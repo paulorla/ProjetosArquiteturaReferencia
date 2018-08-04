@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionFactory {
+public class ConnectionFactory{
 
 	static {
 		try {
@@ -16,7 +16,8 @@ public class ConnectionFactory {
 
 	public static Connection getConnection() {
 		try {
-			return DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/clinicaveterinariadb", "SA", "");
+			Connection con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/clinicaveterinariadb", "SA", "");
+			return con;
 		} catch (SQLException e) {
 			throw new RuntimeException(e);// devemos logar esse erro
 		}
